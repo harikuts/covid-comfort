@@ -18,6 +18,8 @@ Script can be exited with _Ctrl + C_ at any time with no harm done to the file.
 #### Usage
 `python simple_survey.py --file [selected TSV file]`
 
+In the 'rendered' simulation, 'O' represents the user while 'X' represents unfamiliar persons within their space.
+
 ### log.tsv
 
 A sample output file of the survey script. Each entry includes the positions, distances, relevant statistics, and the user-inputted label. Moving forward, database development should be based on this.
