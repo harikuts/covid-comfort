@@ -7,7 +7,7 @@ Description of files in their current state.
 
 ### simple_survey.py
 
-Generates up to `MAX_NODES` random positions representing unfamiliar persons in a public space that for a radius of `MAX_DIST` feet. These parameters can be configured at the top of the script.
+Generates up to `MAX_NODES` random positions representing unfamiliar persons in a public space with a radius of `MAX_DIST` feet. These parameters can be configured at the top of the script.
 
 Displays these positions to the user within the terminal using `print_simulation`. Then prompts the user to select a risk between 1 and 5.
 
