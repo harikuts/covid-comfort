@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+# echo "We will start the front-end first with yarn. If that starts up properly, then we will start up the backend."
+# echo
+cd covid-comfort-frontend
+yarn start
+# echo tacos
+# # yarn start && yarn start-backend-win
+
+
+# yarn start-backend-win & yarn start

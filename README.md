@@ -5,7 +5,7 @@ A sample application for crowd-sourced congestion detection in public spaces.
 
 Description of files in their current state.
 
-### simple_survey.py
+## simple_survey.py
 
 Generates up to `MAX_NODES` random positions representing unfamiliar persons in a public space with a radius of `MAX_DIST` feet. These parameters can be configured at the top of the script.
 
@@ -15,12 +15,12 @@ Stores distances, positions, and various statistics (minumum distance, arithmeti
 
 Script can be exited with _Ctrl + C_ at any time with no harm done to the file.
 
-#### Usage
+### Usage
 `python simple_survey.py --file [selected TSV file]`
 
 In the 'rendered' simulation, 'O' represents the user while 'X' represents unfamiliar persons within their space.
 
-### log.tsv
+## log.tsv
 
 A sample output file of the survey script. Each entry includes the positions, distances, relevant statistics, and the user-inputted label. Moving forward, database development should be based on this.
 
@@ -30,8 +30,8 @@ If a non-existing file is selected as the argument passed through `--file`, a ne
 
 A survey must be created to obtain initial data. The best platform to do this is via a mobile-focused web app, as it's the most accessible without having to port to different platforms.
 
-### Frontend
-![Sample Mobile Web Application Interface](/sample_ui.png)
+## Frontend
+![Sample Mobile Web Application Interface](./media_resources/sample_ui.png)
 
 A baseline interface for a survey application. It includes:
 * *simulation round*: to allow users to keep track of how many data points they've generated in the session
@@ -41,5 +41,13 @@ A baseline interface for a survey application. It includes:
 * *user prompt*: to select a risk value between 1-5
 * *submission*: to generate an entry for the backend
 
-### Backend
+In the package.json we configured a port 5000 proxy to point to our Flask backend. With this we can focus on working with the default port 3000 since it will be forward to 5000.
+We also added two scripts *start-backend-win* and *start-backend-posix*, which start the backend on windows and posix OSs respectively.
+
+## Backend
 Backend structure should resemble the sample TSV file, with the addition of the indoor/outdoor setting.
+
+
+## Build
+yarn==1.22.4
+npm==6.14.4

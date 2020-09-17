@@ -1,0 +1,2 @@
+FLASK_APP=simple_survey.py
+FLASK_ENV=development
